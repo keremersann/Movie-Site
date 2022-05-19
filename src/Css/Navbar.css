@@ -1,0 +1,55 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+    background: #2D3436;
+    justify-content: center;
+}
+.navbar-title{
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    color: white
+}
+.navbar-content{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+.navbar-unordered-list{
+    display: flex;
+    gap: 50px;
+    color:#FFFFFF;
+    list-style: none; /* Remove default bullets */
+    margin-right: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+
+}
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #FFFFFF; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+.navbar-logo-image{
+    width: 200px;
+    height: 64px;
+    margin: 16px 70px;
+}
+.navbar-add-movie-button{
+    background: #2D3436;
+    border-radius: 5px;
+    height: 64px;
+    width: 170px;
+    font-family: 'Inter';
+    font-style: 700;
+    color: white;
+    border: 2px solid white;
+
+}
