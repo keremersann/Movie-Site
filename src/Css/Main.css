@@ -1,3 +1,18 @@
 body{
-    background-color: #c9c5c5;
+    background-image: url("../../public/images/bg.jpg");
+    background-color: #cccccc;
+    height: 1200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.main{
+    margin-top: 15px;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
