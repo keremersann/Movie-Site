@@ -1,0 +1,37 @@
+.movie--card{
+    padding: 20px 10px;
+    max-width: 350px;
+    max-height: 500px;
+    background-color: #82DBD8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card--poster
+{
+    width: 300px;
+    height: 455px;
+    max-width:100%;
+    max-height:100%;
+    border-radius: 10px;
+}
+.card--description--div{
+    display: flex;
+    gap: 50px;
+    color: #FCFFE7;
+    max-width:100%;
+    max-height:100%;
+    align-items: center;
+}
+.card--imdb{
+    font-size: 13px;
+    color:gray;
+}
+.card--director{
+    font-size: 13px;
+    color:gray;
+}
+.card--movie--name{
+
+}
