@@ -1,10 +1,11 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navbar'
-import {Outlet } from "react-router-dom";
+import {Outlet} from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <div className="row">
       <Navbar/>
       <Outlet/>
     </div>
