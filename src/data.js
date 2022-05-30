@@ -2,85 +2,49 @@ export default[
     {
         "img": "some image source",
         "name": "Pulp Fiction",
-        "imdb": "8.9",
-        "category": ["black comedy","crime"],
+        "description": "jasdhkjhasdhakghsghkjsahkg",
+        "rating": "8.9",
+        "language": "EN",
         "director": "Quentin Tarantino"
     },
     {
         "img": "some image source",
         "name": "The Godfather",
-        "imdb": "9.2",
-        "category": ["crime","drama"],
+        "description": "jasdhkjhasdhakghsghkjsahkg",
+        "rating": "9.2",
+        "language": "EN",
         "director": "Francis Coppola"
     },
     {
         "img": "some image source",
-        "name": "Unforgiven",
-        "imdb": "8.2",
-        "category": ["drama","western"],
-        "director": "Clint Eastwood"
+        "name": "The Godfather",
+        "description": "jasdhkjhasdhakghsghkjsahkg",
+        "rating": "9.2",
+        "language": "EN",
+        "director": "Francis Coppola"
     },
     {
         "img": "some image source",
-        "name": "The Pianist",
-        "imdb": "8.5",
-        "category": ["music","drama","biography"],
-        "director": "Roman Polanski"
+        "name": "The Godfather",
+        "description": "jasdhkjhasdhakghsghkjsahkg",
+        "rating": "9.2",
+        "language": "EN",
+        "director": "Francis Coppola"
     },
     {
         "img": "some image source",
-        "name": "Mulholland Drive",
-        "imdb": "7.9",
-        "category": ["drama","mystery","thriller"],
-        "director": "David Lynch"
+        "name": "The Godfather",
+        "description": "jasdhkjhasdhakghsghkjsahkg",
+        "rating": "9.2",
+        "language": "EN",
+        "director": "Francis Coppola"
     },
     {
         "img": "some image source",
-        "name": "Mulholland Drive",
-        "imdb": "7.9",
-        "category": ["drama","mystery","thriller"],
-        "director": "David Lynch"
-    },
-    {
-        "img": "some image source",
-        "name": "Mulholland Drive",
-        "imdb": "7.9",
-        "category": ["drama","mystery","thriller"],
-        "director": "David Lynch"
-    },
-    {
-        "img": "some image source",
-        "name": "Mulholland Drive",
-        "imdb": "7.9",
-        "category": ["drama","mystery","thriller"],
-        "director": "David Lynch"
-    },
-    {
-        "img": "some image source",
-        "name": "Mulholland Drive",
-        "imdb": "7.9",
-        "category": ["drama","mystery","thriller"],
-        "director": "David Lynch"
-    },
-    {
-        "img": "some image source",
-        "name": "Mulholland Drive",
-        "imdb": "7.9",
-        "category": ["drama","mystery","thriller"],
-        "director": "David Lynch"
-    },
-    {
-        "img": "some image source",
-        "name": "Mulholland Drive",
-        "imdb": "7.9",
-        "category": ["drama","mystery","thriller"],
-        "director": "David Lynch"
-    },
-    {
-        "img": "some image source",
-        "name": "Mulholland Drive",
-        "imdb": "7.9",
-        "category": ["drama","mystery","thriller"],
-        "director": "David Lynch"
+        "name": "The Godfather",
+        "description": "jasdhkjhasdhakghsghkjsahkg",
+        "rating": "9.2",
+        "language": "EN",
+        "director": "Francis Coppola"
     }
 ]

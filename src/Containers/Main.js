@@ -1,15 +1,14 @@
 import "../Css/Main.css"
 import React from 'react'
-import Card from "../Components/Card"
+import Cardd from "../Components/Cardd"
 import data from "../data"
 
-function Main()
-{
+export default function Main(){
 
 let [movieList, setMovieList] = React.useState(data);
 
 const cardElements = movieList.map( (item) => {
-    return <Card img={item.img} name = {item.name} imdb = {item.imdb} category = {item.category} director = {item.director}/>
+    return <Cardd img={item.img} name ={item.name} description ={item.description} rating ={item.rating} language ={item.language} director ={item.director}/>
 })
 
     return (
@@ -17,10 +16,7 @@ const cardElements = movieList.map( (item) => {
             <div className = "grid--view">
                 {cardElements}
             </div>
-           
         </div>
         
     )
 }
-
-export default Main
