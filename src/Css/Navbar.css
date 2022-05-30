@@ -43,7 +43,8 @@ ul li::before {
     height: 100px;
     margin: 16px 70px;
 }
-.navbar-add-movie-button{
+
+.navbar-button{
     background: #2D3436;
     border-radius: 5px;
     height: 64px;
@@ -52,5 +53,4 @@ ul li::before {
     font-style: 700;
     color: white;
     border: 2px solid white;
-
 }

@@ -83,5 +83,4 @@ export default[
         "category": ["drama","mystery","thriller"],
         "director": "David Lynch"
     }
-
 ]

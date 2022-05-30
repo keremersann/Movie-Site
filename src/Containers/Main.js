@@ -1,10 +1,7 @@
 import "../Css/Main.css"
 import React from 'react'
-import Hero from "./Hero"
-import Card from "./Card"
+import Card from "../Components/Card"
 import data from "../data"
-
-
 
 function Main()
 {
@@ -17,7 +14,6 @@ const cardElements = movieList.map( (item) => {
 
     return (
         <div className = "main">
-            <Hero />
             <div className = "grid--view">
                 {cardElements}
             </div>

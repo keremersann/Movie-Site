@@ -2,24 +2,35 @@
   "movies": [
     {
       "id": 1,
-      "movieTitle": "Uncharted",
-      "movieRating": "6.4",
-      "movieDescription": "Street-smart Nathan Drake is recruited by seasoned treasure hunter Victor ""Sully"" Sullivan to recover a fortune amassed by Ferdinand Magellan, and lost 500 years ago by the House of Moncada.",
-	  "movieLanguage": "EN"
+      "title": "Uncharted",
+      "rating": "6.4",
+      "description": "Street-smart Nathan Drake is recruited by seasoned treasure hunter Victor 'Sully' Sullivan to recover a fortune amassed by Ferdinand Magellan, and lost 500 years ago by the House of Moncada.",
+      "language": "EN",
+      "director": ""
     },
     {
       "id": 2,
-      "movieTitle": "The Lord of the Rings: The Fellowship of the Ring",
-      "movieRating": "8.8",
-      "movieDescription": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
-	  "movieLanguage": "EN"
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "rating": "8.8",
+      "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+      "language": "EN",
+      "director": ""
     },
     {
       "id": 3,
-      "movieTitle": "Star Wars: Episode I - The Phantom Menace",
-      "movieRating": "6.5",
-      "movieDescription": "Two Jedi escape a hostile blockade to find allies and come across a young boy who may bring balance to the Force, but the long dormant Sith resurface to claim their original glory.",
-	  "movieLanguage": "EN"
+      "title": "Star Wars: Episode I - The Phantom Menace",
+      "rating": "6.5",
+      "description": "Two Jedi escape a hostile blockade to find allies and come across a young boy who may bring balance to the Force, but the long dormant Sith resurface to claim their original glory.",
+      "language": "EN",
+      "director": ""
+    },
+    {
+      "title": "ss",
+      "desc": "ss",
+      "rating": "2",
+      "language": "ss",
+      "director": "ss",
+      "id": 4
     }
   ]
 }
