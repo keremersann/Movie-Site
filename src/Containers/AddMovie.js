@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const api = axios.create({
-    baseURL: 'http://localhost:3001/movies',
-});
+const baseURL = "http://localhost:3001/movies";
 
 export default function AddMovie(){
-  const [movie, setMovie] = useState("");
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [rating, setRating] = useState("");
-  const [language, setLanguage] = useState("");
-  const [director, setDirector] = useState("");
+  const [movie, setMovie] = useState(null);
+  const [title, setTitle] = useState(null);
+  const [description, setDescription] = useState(null);
+  const [rating, setRating] = useState(null);
+  const [language, setLanguage] = useState(null);
+  const [director, setDirector] = useState(null);
 
   const onTitleChange = (e) => setTitle(e.target.value);
   const onDescriptionChange = (e) => setDescription(e.target.value);
@@ -20,19 +18,19 @@ export default function AddMovie(){
   const onDirectorChange = (e) => setDirector(e.target.value);
 
   
-useEffect(() => {
-    api.get('/').then(res => {
-        setMovie(res.data);
-    })
-}, []);
+  useEffect(() => {
+    axios.get(`${baseURL}`).then((response) => {
+      setMovie(response.data);
+    });
+  }, []);
 
-function createPost() {
-    api
-      .post("http://localhost:3001/movies",  { title, description, rating, language, director })
-      .then((response) => {
-        setMovie({ title, description, rating, language, director });
-      });
-  }
+  function createPost() {
+      axios
+        .post("http://localhost:3001/movies",  { title, description, rating, language, director })
+        .then((response) => {
+          setMovie({ title, description, rating, language, director });
+        });
+    }
 
   return (
       <form>
