@@ -1,22 +1,32 @@
 import "../Css/Main.css"
-import React from 'react'
-import Cardd from "../Components/Cardd"
-import data from "../data"
+import React, {useState, useEffect} from 'react'
+import MovieCard from "../Components/MovieCard"
+import axios from 'axios';
+
+const baseURL =  `http://localhost:3001/movies`;
 
 export default function Main(){
 
-let [movieList, setMovieList] = React.useState(data);
+    const [movieList, setMovieList] = useState(null);
+    
+    useEffect(() => {
+        axios.get(baseURL).then((response) => {
+          setMovieList(response.data);
+        });
+      }, []);
 
-const cardElements = movieList.map( (item) => {
-    return <Cardd img={item.img} name ={item.name} description ={item.description} rating ={item.rating} language ={item.language} director ={item.director}/>
-})
+    if (!movieList) return null;
 
-    return (
-        <div className = "main">
-            <div className = "grid--view">
-                {cardElements}
+    const cardElements = movieList.map( (item) => {
+        return <MovieCard title ={item.title} description ={item.description} rating ={item.rating} language ={item.language} director ={item.director}/>
+    })
+    
+        return (
+            <div className = "main">
+                <div className = "grid--view">
+                    {cardElements}
+                </div>
             </div>
-        </div>
-        
-    )
-}
+            
+        )
+    }
