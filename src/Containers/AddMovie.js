@@ -5,14 +5,28 @@ import "../Css/AddMovie.css"
 
 const baseURL = "http://localhost:3001/movies";
 
-
 export default function AddMovie(){
   const [movie, setMovie] = useState(null);
   const [title, setTitle] = useState(null);
   const [description, setDescription] = useState(null);
+  const [director, setDirector] = useState(null);
   const [rating, setRating] = useState(null);
   const [language, setLanguage] = useState(null);
-  const [director, setDirector] = useState(null);
+  
+
+  // initially states shouldn't be null. Hence we should assign empty string to each of them if they are null
+
+  let titleVariable;
+  let descriptionVariable;
+  let ratingVariable;
+  let directorVariable;
+
+  titleVariable = (title === null) ? "" : title;
+  descriptionVariable = (description === null) ? "" : description;
+  directorVariable = (director === null) ? "" : director;
+  ratingVariable = (rating === null) ? "" : rating;
+  
+
 
   const onTitleChange = (e) => setTitle(e.target.value);
   const onDescriptionChange = (e) => setDescription(e.target.value);
@@ -29,15 +43,10 @@ export default function AddMovie(){
 
   function createMovie() {
       axios
-        .post("http://localhost:3001/movies",  { title, description, rating, language, director })
-        .then((res) => {
+        .post(baseURL,  { title, description, rating, language, director })
+        .then(() => {
           setMovie({ title, description, rating, language, director });
         });
-    }
-    function onValueChange(event) {
-      this.setRating({
-        selectedOption: event.target.value
-      });
     }
 
   return (
@@ -47,27 +56,27 @@ export default function AddMovie(){
         <FormGroup row>
           <Label for="title" sm={2} className = "form-label">Title</Label>
           <Col sm={10}>
-          <Input type="text" name="title" id="title" value={title} onChange={onTitleChange} placeholder="Enter Title" />
+          <Input type="text" name="title" id="title" value={titleVariable} onChange={onTitleChange} placeholder="Enter Title" />
           </Col>
         </FormGroup>
         <FormGroup row>
           <Label for="description" sm={2} className = "form-label">Description</Label>
           <Col sm={10}>
-          <Input type="textarea" name="description" id="description"  value={description}
+          <Input type="textarea" name="description" id="description"  value={descriptionVariable}
             onChange={onDescriptionChange} placeholder="Enter Movie Description" />
           </Col>
         </FormGroup>
         <FormGroup row>
           <Label for="director" sm={2} className = "form-label">Director</Label>
           <Col sm={10}>
-          <Input type="text" name="director" id="director" value={director}
+          <Input type="text" name="director" id="director" value={directorVariable}
             onChange={onDirectorChange} placeholder="Enter Director"/>
           </Col>
         </FormGroup>
         <FormGroup row>
           <Label for="rating" sm={2} className = "form-label">Rating</Label>
           <Col sm={10}>
-          <Input type="number" name="rating" id="rating" value={rating}
+          <Input type="number" name="rating" id="rating" value={ratingVariable}
             onChange={onRatingChange} placeholder='Enter Rating'/>
           </Col>
         </FormGroup>
