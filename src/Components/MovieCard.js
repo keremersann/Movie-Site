@@ -4,7 +4,7 @@ import {Card, ListGroup, ListGroupItem, Button} from "react-bootstrap"
 export default function MovieCard(props){
     return (
         <Card style={{ width: "20rem", height: "38rem" }}>
-            <Card.Img variant="top" src="images/bg2.jpg" />
+            <Card.Img variant="top" src={props.img} style={{ height: "50%", width: "100%"}} />
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text>{props.description}</Card.Text>
@@ -15,7 +15,6 @@ export default function MovieCard(props){
                 <ListGroupItem>Director: {props.director}</ListGroupItem>
             </ListGroup>
             <Card.Body>
-                <Button variant="primary">Update Movie</Button>{' '}
                 <Button variant="danger" onClick = {() => {props.handleDelete(props.id)}}>Delete Movie</Button>
             </Card.Body>
         </Card>

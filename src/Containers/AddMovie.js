@@ -12,7 +12,8 @@ export default function AddMovie(){
     title: "", 
     description: "", 
     director: "", 
-    rating: "", 
+    rating: "",
+    img: "",
     language: ""}
 
   const[formValues, setFormValues] = useState(initialValues);
@@ -42,6 +43,8 @@ export default function AddMovie(){
 
     if(!values.description){
       errors.description = "Description is required!"
+    }else if(values.decription > 60){
+      errors.rating = "Description can not exceed 60 characters!"
     }
 
     if(!values.director){
@@ -126,6 +129,14 @@ export default function AddMovie(){
           </Col>
         </FormGroup>
 
+        <FormGroup row>
+          <Label for="img" sm={2} className = "form-label">Image URL</Label>
+          <Col sm={10}>
+          <Input type="text" name="img" id="img" value={formValues.img}
+            onChange={handleChange} placeholder="Enter Image URL"/>
+          </Col>
+        </FormGroup>
+
         <p className = "formValidations">{formErrors.rating}</p>
 
         <FormGroup tag="fieldset"  row>
@@ -157,7 +168,6 @@ export default function AddMovie(){
             </FormGroup>
           </Col>
         </FormGroup>
-
         <p className = "formValidations">{formErrors.language}</p>
         <Button type = "submit" >Add Movie</Button>
       </Form>
