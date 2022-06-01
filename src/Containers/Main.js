@@ -26,7 +26,6 @@ export default function Main(){
             )
           )
     }
-    console.log(movieList)
 
     const cardElements = movieList.map( (item) => {
         return <MovieCard key ={item.id} id = {item.id} title ={item.title} description ={item.description} 
