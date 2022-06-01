@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Container, Col, Button, Form, FormGroup, Label, Input} from 'reactstrap';
+import "../Css/AddMovie.css"
 
 const baseURL = "http://localhost:3001/movies";
+
 
 export default function AddMovie(){
   const [movie, setMovie] = useState(null);
@@ -24,57 +27,82 @@ export default function AddMovie(){
     });
   }, []);
 
-  function createPost() {
+  function createMovie() {
       axios
         .post("http://localhost:3001/movies",  { title, description, rating, language, director })
-        .then((response) => {
+        .then((res) => {
           setMovie({ title, description, rating, language, director });
         });
     }
+    function onValueChange(event) {
+      this.setRating({
+        selectedOption: event.target.value
+      });
+    }
 
   return (
-      <form>
-        <label>
-          Title:{" "}
-          <input type="text" name="title" value={title} onChange={onTitleChange} />
-        </label>
-        <label>
-          Description:{" "}
-          <input
-            type="text"
-            name="description"
-            value={description}
-            onChange={onDescriptionChange}
-          />
-        </label>
-        <label>
-          Director:
-          <input
-            type="text"
-            name="director"
-            value={director}
-            onChange={onDirectorChange}
-          />
-        </label>
-        <label>
-          Movie Language:
-          <input
-            type="text"
-            name="language"
-            value={language}
-            onChange={onLanguageChange}
-          />
-        </label>
-        <label>
-          Rating:
-          <input
-            type="number"
-            name="rating"
-            value={rating}
-            onChange={onRatingChange}
-          />
-        </label>
-        <input type="submit" value="Submit" onClick={createPost}  />
-      </form>
+    <Container className = "form-parent-container">
+      <h2>Movie Form</h2>
+    <Form className = "form-container">
+        <FormGroup row>
+          <Label for="title" sm={2} className = "form-label">Title</Label>
+          <Col sm={10}>
+          <Input type="text" name="title" id="title" value={title} onChange={onTitleChange} placeholder="Enter Title" />
+          </Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label for="description" sm={2} className = "form-label">Description</Label>
+          <Col sm={10}>
+          <Input type="textarea" name="description" id="description"  value={description}
+            onChange={onDescriptionChange} placeholder="Enter Movie Description" />
+          </Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label for="director" sm={2} className = "form-label">Director</Label>
+          <Col sm={10}>
+          <Input type="text" name="director" id="director" value={director}
+            onChange={onDirectorChange} placeholder="Enter Director"/>
+          </Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label for="rating" sm={2} className = "form-label">Rating</Label>
+          <Col sm={10}>
+          <Input type="number" name="rating" id="rating" value={rating}
+            onChange={onRatingChange} placeholder='Enter Rating'/>
+          </Col>
+        </FormGroup>
+
+        <FormGroup tag="fieldset"  row>
+          <legend className="col-form-label col-sm-2 form-label">Radio Buttons</legend>
+          <Col sm={10}>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="language" value = "Turkish" onChange={onLanguageChange}/>{' '}
+                Turkish
+              </Label>
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="language" value = "English" onChange={onLanguageChange}/>{' '}
+                English
+              </Label>
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="language" value = "French" onChange={onLanguageChange}/>{' '}
+                French
+              </Label>
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="language" value = "German" onChange={onLanguageChange}/>{' '}
+                German
+              </Label>
+            </FormGroup>
+          </Col>
+        </FormGroup>
+        <Button type = "submit"onClick={createMovie}>Add Movie</Button>
+      </Form>
+      </Container>
   );
 };
