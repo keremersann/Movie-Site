@@ -1,9 +1,9 @@
 .navbar{
     display: flex;
     align-items: center;
-    padding-right: 100px;
     background: #2D3436;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
 }
 .navbar-title{
     font-family: 'Karla', sans-serif;
@@ -41,7 +41,6 @@ ul li::before {
 .navbar-logo-image{
     width: 100px;
     height: 100px;
-    margin: 16px 70px;
 }
 
 .navbar-button{
