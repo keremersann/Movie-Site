@@ -28,9 +28,10 @@ export default function Main(){
     }
 
     const cardElements = movieList.map( (item) => {
-        return <MovieCard key ={item.id} id = {item.id} title ={item.title} description ={item.description} 
-        rating ={item.rating} language ={item.language} director ={item.director} handleDelete = {deleteMovie}/>
+        return <MovieCard key ={item.id} id = {item.id} title ={item.formValues.title} description ={item.formValues.description} 
+        rating ={item.formValues.description} language ={item.formValues.description} director ={item.formValues.description} handleDelete = {deleteMovie}/>
     })
+    
     
         return (
             <div className = "main">
