@@ -3,7 +3,7 @@ import {Card, ListGroup, ListGroupItem, Button} from "react-bootstrap"
 
 export default function MovieCard(props){
     return (
-        <Card style={{ width: "20rem", height: "30rem" }}>
+        <Card style={{ width: "20rem", height: "38rem" }}>
             <Card.Img variant="top" src="images/bg2.jpg" />
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>

@@ -82,7 +82,7 @@ export default function AddMovie(){
         </FormGroup>
 
         <FormGroup tag="fieldset"  row>
-          <legend className="col-form-label col-sm-2 form-label">Radio Buttons</legend>
+          <legend className="col-form-label col-sm-2 form-label">Language</legend>
           <Col sm={10}>
             <FormGroup check>
               <Label check>

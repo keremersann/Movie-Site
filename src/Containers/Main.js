@@ -34,7 +34,7 @@ export default function Main(){
     
         return (
             <div className = "main">
-                <div className = "grid--view">
+                <div className = "grid--view--movie">
                     {cardElements}
                 </div>
             </div>

@@ -11,29 +11,81 @@ body{
     padding: 0px 25px;
 }
 
-/* Grid view images */
-.grid--view {
+/* Grid view for movies  */
+.grid--view--movie {
     background-color: #3BACB6;
     padding-left: 100px;
     padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(4, 20vw);
-    grid-template-rows: repeat(1, 35vw);
+    grid-template-rows: repeat(1, 40vw);
     grid-row-gap: 20px;
     grid-column-gap: 40px;
     padding-bottom: 100px;
 }
 
 @media (max-width: 600px) {
-    .grid--view {
+    .grid--view--movie {
         padding-left: 15%;
-        grid-template-columns: repeat(1, 50vw);
-        grid-template-rows: repeat(1, 110vw);
+        grid-template-columns: repeat(1, 20vw);
+        grid-template-rows: repeat(1, 120vw);
     }
 }
 
 @media (min-width: 610px) {
-    .grid--view {
+    .grid--view--movie {
+        padding-left: 3%;
+        grid-template-columns: repeat(2, 20vw);
+        grid-template-rows: repeat(1, 100vw);
+        grid-row-gap: 10px;
+        grid-column-gap: 180px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .grid--view--movie {
+        padding-left: 4%;
+        grid-template-columns: repeat(3, 30vw);
+        grid-template-rows: repeat(1, 50vw);
+        grid-row-gap: 60px;
+        grid-column-gap: 20px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .grid--view--movie {
+        padding-left: 100px;
+        padding-top: 20px;
+        grid-template-columns: repeat(4, 20vw);
+        grid-template-rows: repeat(1, 40vw);
+        grid-row-gap: 20px;
+        grid-column-gap: 40px;
+    }
+}
+
+/* Grid view for team  */
+.grid--view--team {
+    background-color: #3BACB6;
+    padding-left: 100px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    grid-template-rows: repeat(1, 40vw);
+    grid-row-gap: 20px;
+    grid-column-gap: 40px;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 600px) {
+    .grid--view--team {
+        padding-left: 15%;
+        grid-template-columns: repeat(1, 20vw);
+        grid-template-rows: repeat(1, 85vw);
+    }
+}
+
+@media (min-width: 610px) {
+    .grid--view--team {
         padding-left: 3%;
         grid-template-columns: repeat(2, 20vw);
         grid-template-rows: repeat(1, 70vw);
@@ -43,21 +95,21 @@ body{
 }
 
 @media (min-width: 1000px) {
-    .grid--view {
+    .grid--view--team {
         padding-left: 4%;
-        grid-template-columns: repeat(3, 30vw);
-        grid-template-rows: repeat(1, 35vw);
+        grid-template-columns: repeat(3, 25vw);
+        grid-template-rows: repeat(1, 30vw);
         grid-row-gap: 60px;
         grid-column-gap: 20px;
     }
 }
 
 @media (min-width: 1400px) {
-    .grid--view {
+    .grid--view--team {
         padding-left: 100px;
         padding-top: 20px;
         grid-template-columns: repeat(4, 20vw);
-        grid-template-rows: repeat(1, 25vw);
+        grid-template-rows: repeat(1, 40vw);
         grid-row-gap: 20px;
         grid-column-gap: 40px;
     }
