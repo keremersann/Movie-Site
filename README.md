@@ -8,7 +8,9 @@ Our project is for a movie site where a user can store their movie lists. We all
 
  - The user enters the website and sees the main page on screen.
 ![alt text](https://cdn.discordapp.com/attachments/643911737837617192/981937381672362035/unknown.png)
+
  - The page has movie cards which has movie features such as **title, etc**. Also, we can delete a movie from the list by **clicking delete button**.
+
 ![alt text](https://cdn.discordapp.com/attachments/643911737837617192/981938044074610708/unknown.png)
  
  - You can add a new movie by **clicking add movie button** on the navbar.
