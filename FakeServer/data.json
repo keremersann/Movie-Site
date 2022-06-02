@@ -2,47 +2,25 @@
   "movies": [
     {
       "formValues": {
-        "title": "Musa",
-        "description": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
-        "director": "ss",
-        "rating": "1.5",
-        "img": "https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_FMjpg_UX1000_.jpg",
-        "language": "Turkish"
+        "title": "The Lord of the Rings",
+        "description": "A meek Hobbit from the Shire and eight companions set out on a journey to..",
+        "director": "Peter Jackson",
+        "rating": "8.4",
+        "img": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg",
+        "language": "English"
       },
       "id": 1
     },
     {
       "formValues": {
-        "title": "deneme",
-        "description": "22",
-        "director": "22",
-        "rating": "8.4",
-        "img": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg",
-        "language": "French"
-      },
-      "id": 2
-    },
-    {
-      "formValues": {
-        "title": "as",
-        "description": "asd",
-        "director": "asda",
-        "rating": "9.0",
+        "title": "Uncharted",
+        "description": "Street-smart Nathan Drake is recruited by seasoned treasure hunter Victor..",
+        "director": "Ruben Fleischer",
+        "rating": "6.4",
         "img": "https://m.media-amazon.com/images/M/MV5BMWEwNjhkYzYtNjgzYy00YTY2LThjYWYtYzViMGJkZTI4Y2MyXkEyXkFqcGdeQXVyNTM0OTY1OQ@@._V1_.jpg",
         "language": "English"
       },
-      "id": 3
-    },
-    {
-      "formValues": {
-        "title": "ss",
-        "description": "ss",
-        "director": "ss",
-        "rating": "2",
-        "img": "https://www.klasiksanatlar.com/img/sayfalar/b/1_1598452306_resim.png",
-        "language": "Turkish"
-      },
-      "id": 4
+      "id": 2
     }
   ]
 }
